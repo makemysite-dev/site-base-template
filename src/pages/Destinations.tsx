@@ -1,4 +1,3 @@
-
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -11,7 +10,7 @@ const destinations = [
     image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=600&fit=crop',
     highlights: ['Private beach dinners', 'Island hopping tours', 'Couples spa sessions', 'Floating breakfast'],
     duration: '7 Days',
-    from: '₹85,000'
+    from: '₹49,000'
   },
   {
     name: 'Bali',

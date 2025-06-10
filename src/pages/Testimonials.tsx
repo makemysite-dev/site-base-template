@@ -10,8 +10,7 @@ const testimonials = [
     name: "Nisha",
     location: "Bangalore",
     trip: "Thailand - Krabi",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+    rating: 5
   },
   {
     id: 2,
@@ -19,8 +18,7 @@ const testimonials = [
     name: "Ashwin & Meera",
     location: "Coimbatore",
     trip: "Sri Lanka Honeymoon",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1515810313723-1cef343b8372?w=150&h=150&fit=crop&crop=face"
+    rating: 5
   },
   {
     id: 3,
@@ -28,8 +26,7 @@ const testimonials = [
     name: "Ravi",
     location: "Hyderabad",
     trip: "Dubai City Break",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    rating: 5
   },
   {
     id: 4,
@@ -37,8 +34,7 @@ const testimonials = [
     name: "Priya & Family",
     location: "Chennai",
     trip: "Bali Family Adventure",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    rating: 5
   },
   {
     id: 5,
@@ -46,8 +42,7 @@ const testimonials = [
     name: "Vikram",
     location: "Mumbai",
     trip: "Nepal Trekking",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+    rating: 5
   },
   {
     id: 6,
@@ -55,8 +50,7 @@ const testimonials = [
     name: "Kavya & Arjun",
     location: "Pune",
     trip: "Maldives Honeymoon",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face"
+    rating: 5
   }
 ];
 
@@ -121,13 +115,8 @@ const Testimonials = () => {
                     <div className="absolute -bottom-2 left-4 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white"></div>
                   </div>
                   
-                  {/* Profile */}
-                  <div className="flex items-center space-x-3">
-                    <img
-                      src={testimonial.image}
-                      alt={`${testimonial.name} profile`}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
+                  {/* Profile without image */}
+                  <div className="flex items-center justify-between">
                     <div className="flex-1">
                       <h3 className="font-semibold text-journeo-navy text-sm">
                         {testimonial.name}

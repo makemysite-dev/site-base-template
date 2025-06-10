@@ -13,10 +13,10 @@ const About = () => {
         <section className="relative py-20 bg-gradient-to-r from-olive-green to-journeo-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-              Who We Are
+              Journeo Holidays — Travel Curation Made for You.
             </h1>
             <p className="text-xl text-sky-blue max-w-3xl mx-auto leading-relaxed">
-              Born over cups of chai, maps scribbled with dreams, and stories shared by the sea.
+              Curated travel. Made simple for you.
             </p>
           </div>
         </section>
@@ -31,21 +31,28 @@ const About = () => {
               
               <div className="prose prose-lg max-w-none">
                 <p className="text-journeo-navy leading-relaxed mb-6">
-                  Journeo was born over cups of chai, maps scribbled with dreams, and stories shared by the sea. 
-                  We are travel curators who've worked with over <strong>150+ Indian families</strong>, couples, 
-                  and solo wanderers to design deeply personal journeys.
+                  At Journeo Holidays, we believe travel should be personal, stress-free, and accessible to everyone — not just luxury seekers or frequent flyers.
                 </p>
                 
                 <p className="text-journeo-navy leading-relaxed mb-6">
-                  No agents. No "one-size-fits-all." Just real conversations, handcrafted plans, and a promise 
-                  to care about your trip as much as you do. Based in the heart of Coimbatore, Tamil Nadu, 
-                  we serve travellers across India through our completely digital approach.
+                  Whether you're a family planning your first international trip, a group of friends looking for an unforgettable getaway, or a solo traveler seeking inspiration, we're here to make every journey smooth, safe, and joyful.
                 </p>
 
-                <p className="text-journeo-navy leading-relaxed">
-                  We believe that travel should be transformative, not transactional. Every itinerary we create 
-                  tells a story—your story—woven together with authentic experiences, meaningful connections, 
-                  and moments that stay with you long after you return home.
+                <p className="text-journeo-navy leading-relaxed mb-6">
+                  We don't just book tickets. We curate your travel — customized itineraries, handpicked stays, Unique experiences, budget-friendly ideas, and local experiences you won't find on generic platforms.
+                </p>
+
+                <div className="bg-sand-beige p-6 rounded-lg mb-6">
+                  <h3 className="text-xl font-serif font-bold text-journeo-navy mb-4 flex items-center">
+                    🌍 Travel Without the Stress
+                  </h3>
+                  <p className="text-journeo-navy leading-relaxed">
+                    Skip the overwhelming research and expensive travel agents. With Journeo Holidays, you get a dedicated travel curator who listens, understands, and plans your trip like it's their own.
+                  </p>
+                </div>
+
+                <p className="text-journeo-navy leading-relaxed text-center italic">
+                  Because your journey deserves more than just a booking—it deserves a story.
                 </p>
               </div>
             </div>

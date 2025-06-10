@@ -38,7 +38,7 @@ Message: ${formData.message || 'Please help me plan my trip!'}`;
     
     toast({
       title: "Redirecting to WhatsApp",
-      description: "We'll respond to your message within a few hours!",
+      description: "We'll respond to your message within 24 hours!",
     });
   };
 
@@ -176,7 +176,7 @@ Message: ${formData.message || 'Please help me plan my trip!'}`;
                     size="lg"
                     className="w-full bg-terracotta hover:bg-terracotta/90 text-white py-4"
                   >
-                    Plan My Trip via WhatsApp
+                    Plan My Trip
                   </Button>
                 </form>
               </div>
@@ -283,7 +283,7 @@ Message: ${formData.message || 'Please help me plan my trip!'}`;
                     Quick Response Guarantee
                   </h3>
                   <p className="text-sky-blue text-sm">
-                    We typically respond within 2-4 hours during business hours. 
+                    We typically respond within 24 hours during business hours. 
                     For urgent queries, WhatsApp is the fastest way to reach us!
                   </p>
                 </div>
