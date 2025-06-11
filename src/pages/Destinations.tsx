@@ -1,3 +1,4 @@
+
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
@@ -43,7 +44,7 @@ const destinations = [
     name: 'Maldives',
     title: 'Overwater Paradise',
     description: 'Crystal clear waters, overwater villas, and world-class diving experiences.',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop',
+    image: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800&h=600&fit=crop',
     highlights: ['Overwater villa stays', 'Snorkeling & diving', 'Sunset cruises', 'Private beach access'],
     duration: '5 Days',
     from: '₹1,20,000'
