@@ -60,7 +60,7 @@ const HeroSection = () => {
             {/* Trust Indicators */}
             <div className="mt-12 grid grid-cols-3 gap-4 text-center lg:text-left">
               <div>
-                <div className="text-2xl font-bold text-terracotta">150+</div>
+                <div className="text-2xl font-bold text-terracotta">50+</div>
                 <div className="text-sm text-sky-blue">Happy Families</div>
               </div>
               <div>
