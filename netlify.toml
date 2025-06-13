@@ -1,6 +1,6 @@
 [build]
-  command = "bunx @netlify/next build"
+  command = "bunx next build"
   publish = ".next"
 
 [[plugins]]
-  package = "@netlify/next"
+  package = "@netlify/plugin-nextjs"
