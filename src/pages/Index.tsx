@@ -4,6 +4,8 @@ import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/home/HeroSection';
 import PromiseSection from '@/components/home/PromiseSection';
 import FeaturedDestinations from '@/components/home/FeaturedDestinations';
+import Head from 'next/head';
+
 
 const Index = () => {
   return (
