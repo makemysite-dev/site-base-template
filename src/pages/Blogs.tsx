@@ -13,7 +13,7 @@ const Blogs = () => {
         <section className="relative py-20 bg-gradient-to-r from-terracotta to-journeo-navy">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-              Stories of Journeo
+              Stories of Journeo part 1
             </h1>
             <p className="text-xl text-sky-blue max-w-3xl mx-auto leading-relaxed">
               Discover travel tales, insider tips, and curated experiences from our journeys around the world.
