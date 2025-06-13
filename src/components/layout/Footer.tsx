@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import Link from 'next/link'
 import { Instagram, Facebook, Linkedin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -54,32 +54,32 @@ const Footer = () => {
             <h3 className="text-lg font-serif font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
+                <Link href="/" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/destinations" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
+                <Link href="/destinations" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
                   Destinations
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
+                <Link href="/about" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/testimonials" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
+                <Link href="/testimonials" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
+                <Link href="/contact" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
+                <Link href="/faq" className="text-sky-blue hover:text-terracotta transition-colors text-sm">
                   FAQ
                 </Link>
               </li>

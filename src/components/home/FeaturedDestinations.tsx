@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import Link from 'next/link'
 
 const destinations = [
   {
@@ -78,7 +78,7 @@ const FeaturedDestinations = () => {
             size="lg"
             className="bg-olive-green hover:bg-olive-green/90 text-white px-8 py-4"
           >
-            <Link to="/destinations">
+            <Link href="/destinations">
               Discover All Destinations
             </Link>
           </Button>

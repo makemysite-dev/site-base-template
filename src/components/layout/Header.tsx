@@ -1,29 +1,36 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import Head from 'next/head';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
-
+  // const location = useLocation();
   const navigation = [
-    { name: 'Home', href: '/', current: location.pathname === '/' },
-    { name: 'Destinations', href: '/destinations', current: location.pathname === '/destinations' },
-    { name: 'About', href: '/about', current: location.pathname === '/about' },
-    { name: 'Testimonials', href: '/testimonials', current: location.pathname === '/testimonials' },
-    { name: 'Blogs', href: '/blogs', current: location.pathname === '/blogs' },
-    { name: 'Contact', href: '/contact', current: location.pathname === '/contact' },
-    { name: 'FAQ', href: '/faq', current: location.pathname === '/faq' },
+    { name: 'Home', href: '/', current: false },
+    { name: 'Destinations', href: '/destinations', current: false },
+    { name: 'About', href: '/about', current: false },
+    { name: 'Testimonials', href: '/testimonials', current: false },
+    { name: 'Blogs', href: '/blogs', current: false },
+    { name: 'Contact', href: '/contact', current: false },
+    { name: 'FAQ', href: '/faq', current: false },
   ];
 
   return (
     <header className="bg-white/95 backdrop-blur-sm border-b border-sand-beige sticky top-0 z-50">
+      <Head>
+        <title>Journeo Holidays</title>
+        <meta name="description" content="Journeo Holidays - Curated Travel Experiences" />
+        <meta property="og:title" content="Journeo Holidays" />
+        <meta property="og:description" content="Journeo Holidays - Curated Travel Experiences" />
+        <meta property="og:image" content="/lovable-uploads/d13364a8-a356-4546-86d1-80cf77dd86b1.png" />
+      </Head>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <img
                 className="h-10 w-auto"
                 src="/lovable-uploads/d13364a8-a356-4546-86d1-80cf77dd86b1.png"
@@ -38,12 +45,11 @@ const Header = () => {
               {navigation.map((item) => (
                 <Link
                   key={item.name}
-                  to={item.href}
-                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                    item.current
+                  href={item.href}
+                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${item.current
                       ? 'text-terracotta border-b-2 border-terracotta'
                       : 'text-journeo-navy hover:text-terracotta'
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -57,9 +63,9 @@ const Header = () => {
               asChild
               className="bg-terracotta hover:bg-terracotta/90 text-white px-6 py-2 font-medium"
             >
-              <a 
-                href="https://wa.link/0top5g" 
-                target="_blank" 
+              <a
+                href="https://wa.link/0top5g"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 Plan My Trip
@@ -91,12 +97,11 @@ const Header = () => {
               {navigation.map((item) => (
                 <Link
                   key={item.name}
-                  to={item.href}
-                  className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
-                    item.current
+                  href={item.href}
+                  className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${item.current
                       ? 'text-terracotta bg-sand-beige'
                       : 'text-journeo-navy hover:text-terracotta hover:bg-sand-beige'
-                  }`}
+                    }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -107,9 +112,9 @@ const Header = () => {
                   asChild
                   className="w-full bg-terracotta hover:bg-terracotta/90 text-white"
                 >
-                  <a 
-                    href="https://wa.link/0top5g" 
-                    target="_blank" 
+                  <a
+                    href="https://wa.link/0top5g"
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     Plan My Trip
