@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
@@ -13,6 +12,7 @@ const Header = () => {
     { name: 'Destinations', href: '/destinations', current: location.pathname === '/destinations' },
     { name: 'About', href: '/about', current: location.pathname === '/about' },
     { name: 'Testimonials', href: '/testimonials', current: location.pathname === '/testimonials' },
+    { name: 'Blogs', href: '/blogs', current: location.pathname === '/blogs' },
     { name: 'Contact', href: '/contact', current: location.pathname === '/contact' },
     { name: 'FAQ', href: '/faq', current: location.pathname === '/faq' },
   ];
