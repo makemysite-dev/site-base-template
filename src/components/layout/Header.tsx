@@ -9,22 +9,19 @@ const Header = () => {
   // const location = useLocation();
   const navigation = [
     { name: 'Home', href: '/', current: false },
-    { name: 'Destinations', href: '/destinations', current: false },
     { name: 'About', href: '/about', current: false },
-    { name: 'Testimonials', href: '/testimonials', current: false },
     { name: 'Blogs', href: '/blogs', current: false },
-    { name: 'Contact', href: '/contact', current: false },
-    { name: 'FAQ', href: '/faq', current: false },
   ];
 
   return (
     <header className="bg-white/95 backdrop-blur-sm border-b border-sand-beige sticky top-0 z-50">
       <Head>
-        <title>Journeo Holidays</title>
-        <meta name="description" content="Journeo Holidays - Curated Travel Experiences" />
+        <title>Sample Builder</title>
+        <meta name="robots" content="noindex, nofollow"></meta>
+        {/* <meta name="description" content="Journeo Holidays - Curated Travel Experiences" />
         <meta property="og:title" content="Journeo Holidays" />
         <meta property="og:description" content="Journeo Holidays - Curated Travel Experiences" />
-        <meta property="og:image" content="/lovable-uploads/d13364a8-a356-4546-86d1-80cf77dd86b1.png" />
+        <meta property="og:image" content="/lovable-uploads/d13364a8-a356-4546-86d1-80cf77dd86b1.png" /> */}
       </Head>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -33,8 +30,8 @@ const Header = () => {
             <Link href="/" className="flex items-center">
               <img
                 className="h-10 w-auto"
-                src="/lovable-uploads/d13364a8-a356-4546-86d1-80cf77dd86b1.png"
-                alt="Journeo Holidays - Curated Travel Experiences"
+                src=""
+                alt="Sample Builder"
               />
             </Link>
           </div>
@@ -47,8 +44,8 @@ const Header = () => {
                   key={item.name}
                   href={item.href}
                   className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${item.current
-                      ? 'text-terracotta border-b-2 border-terracotta'
-                      : 'text-journeo-navy hover:text-terracotta'
+                    ? 'text-terracotta border-b-2 border-terracotta'
+                    : 'text-journeo-navy hover:text-terracotta'
                     }`}
                 >
                   {item.name}
@@ -64,7 +61,7 @@ const Header = () => {
               className="bg-terracotta hover:bg-terracotta/90 text-white px-6 py-2 font-medium"
             >
               <a
-                href="https://wa.link/0top5g"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -99,8 +96,8 @@ const Header = () => {
                   key={item.name}
                   href={item.href}
                   className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${item.current
-                      ? 'text-terracotta bg-sand-beige'
-                      : 'text-journeo-navy hover:text-terracotta hover:bg-sand-beige'
+                    ? 'text-terracotta bg-sand-beige'
+                    : 'text-journeo-navy hover:text-terracotta hover:bg-sand-beige'
                     }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
